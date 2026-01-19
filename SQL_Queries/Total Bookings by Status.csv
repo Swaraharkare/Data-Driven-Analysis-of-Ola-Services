@@ -1,0 +1,1 @@
+SELECT Booking_Status, COUNT(*) AS Total_Count FROM Bookings GROUP BY Booking_Status;

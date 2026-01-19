@@ -1,0 +1,5 @@
+SELECT Canceled_Rides_by_Driver, COUNT(*) AS Reason_Count
+FROM Bookings
+WHERE Booking_Status = 'Canceled by Driver' AND Canceled_Rides_by_Driver IS NOT NULL
+GROUP BY Canceled_Rides_by_Driver
+ORDER BY Reason_Count DESC;
