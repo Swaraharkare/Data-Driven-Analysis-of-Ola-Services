@@ -28,7 +28,7 @@ Hourly Demand Pattern: Identifying peak hours (8 AM, 6 PM) for surge pricing str
 Ride Status Distribution: A 360-degree view of successful vs. failed bookings.
 TAT Analysis: Comparing Vehicle Arrival Time vs. Customer Readiness time.
 <img width="728" height="638" alt="Screenshot 2026-01-22 191345" src="https://github.com/user-attachments/assets/62f51f1d-f9ae-41a6-bd97-dc821a8d9ac3" />
-
+<img width="1172" height="692" alt="Screenshot 2026-01-22 191614" src="https://github.com/user-attachments/assets/e34f749c-5ae3-4785-a6a3-bfc00f666916" />
 
 4. Power BI (The Dashboard)
 An interactive dashboard was developed to monitor live metrics:
@@ -36,7 +36,6 @@ Overall Executive Summary: Total Bookings (76K), 50% cancellation rate observed.
 Cancellation Insights: Visualizing the primary customer reason ("Driver is not moving...") and driver reason ("Personal/Car issue").
 Vehicle Type View: High volume in Mini/Bike, highest value in Prime SUV
 <img width="1417" height="797" alt="image" src="https://github.com/user-attachments/assets/6c2d8b58-7701-4b0f-bcea-28afd48ec1ca" />
-<img width="1172" height="692" alt="Screenshot 2026-01-22 191614" src="https://github.com/user-attachments/assets/e34f749c-5ae3-4785-a6a3-bfc00f666916" />
 
 🚀 Key Business Insights (2026)
 Operational Bottleneck: The primary issue is the high total cancellation volume (39K of 76K bookings).
