@@ -1,10 +1,10 @@
 # 🚖 OLA Multi-Tool Data Analytics Project
-###**📌 Project Overview**###
+###**📌 Project Overview**
 
 This project is an end-to-end analysis of OLA’s ride-hailing operations. It demonstrates a multi-tool approach to data analytics, utilizing SQL for data extraction, Excel for initial profiling, Python for deep-dive statistical analysis, and Power BI for executive-level dashboards.
 The goal is to analyze 76k+ ride records from July 2024 to optimize booking success rates and maximize revenue across different vehicle categories.
 
-###**🛠️ Multi-Tool Tech Stack**###
+###**🛠️ Multi-Tool Tech Stack**
 Tool	Purpose	Key Task
 SQL	:Data Extraction & Querying	Identifying Top 5 customers, calculating cancellation rates, and analyzing reasons.
 Excel:	Data Cleaning & ETL	Handling "null" values, formatting dates, and initial data profiling.
