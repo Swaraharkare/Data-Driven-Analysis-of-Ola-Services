@@ -1,2 +1,2 @@
 # Data-Driven-Analysis-of-Ola-Uber-Services
-<img width="1363" height="775" alt="image" src="https://github.com/user-attachments/assets/12e76272-9256-4cd2-9f8f-08620914dd8f" />
+<img width="1422" height="801" alt="image" src="https://github.com/user-attachments/assets/cfcae8d4-fa7b-4e16-b173-a56bb928c742" />
