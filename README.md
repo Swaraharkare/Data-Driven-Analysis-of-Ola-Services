@@ -13,6 +13,7 @@ Power BI:	BI Dashboarding	Creating interactive visualizations for C-suite stakeh
 
 ### **📊 Project Workflow & Key Queries**
 **1. SQL (The Foundation)**
+
 I used SQL to answer critical business questions directly from the database:
 Revenue Analysis: Identifying top-performing locations and average booking values.
 Cancellation Rates: Calculating % Cancellation Rate by vehicle type using CASE statements and GROUP BY.
@@ -23,7 +24,15 @@ Customer Loyalty: Identifying the TOP 5 customers by ride count.
        ROUND((SUM(CASE WHEN Booking_Status <> 'Success' THEN 1 ELSE 0 END) * 100.0 / COUNT(*)),2) AS Cancellation_Rate_Percent
 FROM OlaBooking GROUP BY Vehicle_Type ORDER BY Cancellation_Rate_Percent DESC;**
 
-**2. Python (The Deep Dive)**
+**2. Excel (Data Refinement & ETL)**
+
+Before analysis, I used Excel as a lightweight ETL layer to ensure data integrity:
+Data Sanitization: Performed bulk "Find & Replace" for inconsistent naming conventions and removed duplicate records.
+Null Value Management: Utilized Power Query and conditional logic to impute missing values for "Vehicle Arrival Time."
+Format Standardization: Standardized raw timestamps into uniform Date/Time formats to prevent errors in Python time-series analysis.
+
+**3. Python (The Deep Dive)**
+
 Using Pandas and Matplotlib, I developed several visualizations in a Jupyter Notebook:
 Hourly Demand Pattern: Identifying peak hours (8 AM, 6 PM) for surge pricing strategies.
 Ride Status Distribution: A 360-degree view of successful vs. failed bookings.
@@ -32,6 +41,7 @@ TAT Analysis: Comparing Vehicle Arrival Time vs. Customer Readiness time.
 <img width="1172" height="692" alt="Screenshot 2026-01-22 191614" src="https://github.com/user-attachments/assets/e34f749c-5ae3-4785-a6a3-bfc00f666916" />
 
 **4. Power BI (The Dashboard)**
+
 An interactive dashboard was developed to monitor live metrics:
 Overall Executive Summary: Total Bookings (76K), 50% cancellation rate observed.
 Cancellation Insights: Visualizing the primary customer reason ("Driver is not moving...") and driver reason ("Personal/Car issue").
@@ -39,26 +49,16 @@ Vehicle Type View: High volume in Mini/Bike, highest value in Prime SUV
 <img width="1417" height="797" alt="image" src="https://github.com/user-attachments/assets/6c2d8b58-7701-4b0f-bcea-28afd48ec1ca" />
 
 ### **🚀 Key Business Insights (2026)**
+
 Operational Bottleneck: The primary issue is the high total cancellation volume (39K of 76K bookings).
 Efficiency Issue: Average Vehicle TAT (82.90s) is nearly double the Average Customer TAT (41.26s), indicating drivers are slow to arrive after accepting a ride.
 Actionable Insight: The "Driver is not moving" customer complaint directly links to the slow V_TAT. OLA should implement real-time geo-fencing to penalize stationary drivers post-acceptance.
 
-### **📂 Project Structure**
-├── SQL_Queries/
-│   └── ola_analysis_queries.sql    # Raw SQL scripts
-├── Python_Analysis/
-│   └── OLA_Full_EDA.ipynb          # Jupyter Notebook
-├── PowerBI_Dashboard/
-│   └── OLA_Executive_Report.pbix   # Interactive Power BI file
-├── Data/
-│   └── ola_cleaned_data.csv        # Processed dataset
-├── Images/
-│   └── dashboard_screenshot.png    # Dashboard image for README
-└── README.md                       # Comprehensive documentation
-
 ### **👤 Author**
 
 **Swaranjali Harkare**
+
 **LinkedIn:** https://www.linkedin.com/in/swaranjali-harkare-364a592a8
+
 **Portfolio:**
 
