@@ -16,6 +16,8 @@ The goal is to analyze 76k+ ride records from July 2024 to optimize booking succ
 **1. SQL (The Foundation)**
 
 I used SQL to answer critical business questions directly from the database:
+| Category | Key Business Insight | 
+| :--- | :--- | 
 | **Revenue Analysis** | Identifying top-performing locations and average booking values.|
 | **Cancellation Rates** | Calculating % Cancellation Rate by vehicle type using CASE statements and GROUP BY.|
 | **KPI Tracking** | Finding MAX/MIN driver ratings and COUNT of bookings per hour.|
