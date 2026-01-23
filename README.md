@@ -16,10 +16,10 @@ The goal is to analyze 76k+ ride records from July 2024 to optimize booking succ
 **1. SQL (The Foundation)**
 
 I used SQL to answer critical business questions directly from the database:
-Revenue Analysis: Identifying top-performing locations and average booking values.
-Cancellation Rates: Calculating % Cancellation Rate by vehicle type using CASE statements and GROUP BY.
-KPI Tracking: Finding MAX/MIN driver ratings and COUNT of bookings per hour.
-Customer Loyalty: Identifying the TOP 5 customers by ride count.
+| **Revenue Analysis** | Identifying top-performing locations and average booking values.|
+| **Cancellation Rates** | Calculating % Cancellation Rate by vehicle type using CASE statements and GROUP BY.|
+| **KPI Tracking** | Finding MAX/MIN driver ratings and COUNT of bookings per hour.|
+| **Customer Loyalty** | Identifying the TOP 5 customers by ride count.|
 
 **SELECT Vehicle_Type, 
        ROUND((SUM(CASE WHEN Booking_Status <> 'Success' THEN 1 ELSE 0 END) * 100.0 / COUNT(*)),2) AS Cancellation_Rate_Percent
