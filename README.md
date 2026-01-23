@@ -5,11 +5,11 @@ This project is an end-to-end analysis of OLA’s ride-hailing operations. It de
 The goal is to analyze 76k+ ride records from July 2024 to optimize booking success rates and maximize revenue across different vehicle categories.
 
 ### **🛠️ Multi-Tool Tech Stack**
-Tool	Purpose	Key Task
-SQL	:Data Extraction & Querying	Identifying Top 5 customers, calculating cancellation rates, and analyzing reasons.
-Excel:	Data Cleaning & ETL	Handling "null" values, formatting dates, and initial data profiling.
-Python:	Statistical Analysis	Using Pandas, NumPy, and Matplotlib for correlation & distribution analysis.
-Power BI:	BI Dashboarding	Creating interactive visualizations for C-suite stakeholders based on KPIs.
+Tool	                     Purpose	                             Key Task
+SQL	         Data Extraction & Querying       	Identifying Top 5 customers, calculating cancellation rates, and analyzing reasons.
+Excel        	Data Cleaning & ETL	                     Handling "null" values, formatting dates, and initial data profiling.
+Python 	Statistical Analysis                     	Using Pandas, NumPy, and Matplotlib for correlation & distribution analysis.
+Power BI 	BI Dashboarding	                     Creating interactive visualizations for C-suite stakeholders based on KPIs.
 
 ### **📊 Project Workflow & Key Queries**
 **1. SQL (The Foundation)**
